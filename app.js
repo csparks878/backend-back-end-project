@@ -12,7 +12,7 @@ const UserModel = require("./models/UserModel");
 
 //server and database setup
 const port = process.env.PORT || 3001;
-const url = "mongodb://charlie:password12@ds147975.mlab.com:47975/sparks_notes";
+const url = process.env.MONGODB_URI;
 const app = express();
 mongoose.connect(url);
 mongoose.connection
