@@ -1,10 +1,13 @@
 {
   "name": "back-end-project-week",
   "version": "1.0.0",
-  "main": "back/app.js",
+  "main": "app.js",
   "repository": "https://github.com/csparks878/back-end-project-week.git",
   "author": "Charlie Sparks <csparks@antioch.edu>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
