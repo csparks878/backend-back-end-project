@@ -25,7 +25,7 @@ mongoose.connection
 
 //initialzing cors
 const corsOptions = {
-    "origin": "*",
+    "origin": "https://sparksnotes.netlify.com",
     "credentials": true
 };
 
