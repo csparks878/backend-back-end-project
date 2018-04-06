@@ -12,7 +12,7 @@ const UserModel = require("./models/UserModel");
 
 //server and database setup
 const port = process.env.PORT || 3001;
-const url = process.env.MONGODB_URI;
+const url = "mongodb://charlie:password12@ds147975.mlab.com:47975/sparks_notes";
 const app = express();
 mongoose.connect(url);
 mongoose.connection
@@ -25,7 +25,7 @@ mongoose.connection
 
 //initialzing cors
 const corsOptions = {
-    "origin": "http://localhost:3000",
+    "origin": "*",
     "credentials": true
 };
 
