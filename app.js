@@ -143,7 +143,7 @@ app.get("/api/restricted", (req, res) => {
 })
 
 //get handler for all notes
-app.get("/api/allNotes", (req, res) => {
+app.get("/api/allNotes", loginMid, (req, res) => {
     NoteModel.find({}, (err, response) => {
         if (err) return console.log(`There was an error getting the notes: ${err}`);
         console.log(`Here are all the notes: \n ${response}`);
