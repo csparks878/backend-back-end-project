@@ -25,7 +25,7 @@ mongoose.connection
 
 //initialzing cors
 const corsOptions = {
-    "origin": "https://sparksnotes.netlify.com",
+    "origin": "*",
     "credentials": true
 };
 
@@ -54,9 +54,7 @@ const loginMid = (req, res, next) => {
 
 //test route handler
 app.get("/", (req, res) => {
-    res.json([{title: "t1", message: "m1"}, {title: "t2", message: "m2"}]);
-    //res.json({title: "test", message: "one"});
-    //res.send("testeroo");
+    res.json({title: "test", message: "one"});
 });
 
 //post handler for adding a new user
